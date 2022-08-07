@@ -8,14 +8,13 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
     <link href="./css/signin.css" rel="stylesheet">
 
   </head>
   
   <body class="text-center bg-light">
     <div class="container">
-        <form class="form-signin" action="controller/checkloginC.jsp" method="POST">
+        <form class="form-signin" action="../controller/checklogin.jsp" method="POST">
             <img class="mb-4" src="./images/logo.jpg" width="72" height="72">
             <h1 class="h3 mb-3" >Ingresar al sistema</h1>
             <input type="email" name="inputEmail" class="form-control" placeholder="Ingrese su usuario" required autofocus >
@@ -23,6 +22,7 @@
             <button type="submit" class="btn btn-lg btn-primary btn-block">Ingresar</button>
         </form>    
     
+    	<p class="text-danger">Usuario o password incorrectos, por favor vuelva a ingresarlos.</p>
     </div>  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
